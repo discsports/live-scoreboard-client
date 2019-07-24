@@ -1,6 +1,6 @@
 {
   "name": "live_scoreboard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Vue based dashboard for updating scores for livestream overlay",
   "scripts": {
