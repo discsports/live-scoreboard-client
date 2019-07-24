@@ -51,6 +51,7 @@
   // import HelloWorld from './components/HelloWorld.vue';
   import _ from 'lodash';
   const api = process.env.VUE_APP_SERVER_API;
+  const interval = 2000;
 
   export default {
     name: 'app',
@@ -96,7 +97,7 @@
             body: JSON.stringify(data),
           })
           .then(res => console.log(res));
-      }, 5000)
+      }, interval)
     }
   };
 </script>
