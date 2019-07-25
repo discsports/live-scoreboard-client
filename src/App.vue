@@ -1,50 +1,36 @@
 <template>
-  <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col text-center">
-          <input
-            class="text-center"
-            v-model="homeTeam"
-            type="text"
-            name="homeTeamText"
-            @input="postData"
-          >
+<div id="app">
+  <!--<img alt="Vue logo" src="./assets/logo.png">-->
+  <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="row">
+          <div class="col text-center">
+            <input class="text-center" v-model="homeTeam" type="text" name="homeTeamText" @input="postData">
+          </div>
         </div>
-        <div class="col text-center">
-          <input
-            class="text-center"
-            v-model="awayTeam"
-            type="text"
-            name="awayTeamText"
-            @input="postData"
-          >
+        <div class="row">
+          <div class="col text-center">
+            <input class="text-center" v-model="homeScore" type="number" name="homeScoreSpinner" @input="postData">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col text-center">
-          <input
-            class="text-center"
-            v-model="homeScore"
-            type="number"
-            name="homeScoreSpinner"
-            @input="postData"
-          >
+      <div class="col text-center">
+        <div class="row">
+          <div class="col text-center">
+            <input class="text-center" v-model="awayTeam" type="text" name="awayTeamText" @input="postData">
+          </div>
         </div>
-        <div class="col text-center">
-          <input
-            class="text-center"
-            v-model="awayScore"
-            type="number"
-            name="awayScoreSpinner"
-            @input="postData"
-          >
+        <div class="row">
+          <div class="col text-center">
+            <input class="text-center" v-model="awayScore" type="number" name="awayScoreSpinner" @input="postData">
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -116,7 +102,7 @@
   }
 
   input[type='number'] {
-    margin-top: 10px;
+    margin: 10px;
     font-size: 3em;
     max-width: 2em;
   }
